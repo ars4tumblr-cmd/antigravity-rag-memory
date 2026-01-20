@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.env
+
+# RAG specific
+chroma_db/
+.rag/
+test_chroma_db/
+
+# OS specific
+.DS_Store
+Thumbs.db
