@@ -52,6 +52,18 @@ KNOWLEDGE = [
         "entity_type": "fact",
         "project_id": "ROBO_AUTO_SYNC",
         "scope": "local"
+    },
+    {
+        "content": "Problem: Git synchronization fails on Windows PCs with auth errors. Solution: Run 'git config --global credential.helper manager'.",
+        "entity_type": "decision",
+        "project_id": "windows_administration",
+        "scope": "global"
+    },
+    {
+        "content": "PC1 Sync Issue: If Git CLI fails on PC1, enable credential manager globaly. This is a known stored fix.",
+        "entity_type": "fact",
+        "project_id": "windows_administration",
+        "scope": "global"
     }
 ]
 
