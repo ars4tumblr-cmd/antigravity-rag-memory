@@ -11,4 +11,16 @@ Write-Host ""
 Write-Host "Press Ctrl+C to stop the server" -ForegroundColor Yellow
 Write-Host ""
 
-chroma run --path $CHROMA_PATH --port $CHROMA_PORT --host localhost
+$VENV_PYTHON = "$PSScriptRoot\.venv\Scripts\python.exe"
+
+if (Test-Path $VENV_PYTHON) {
+    # Use venv python to run chroma
+    # Need to run module chromadb.cli.main or similar? 
+    # Actually just simple 'chroma' command is a script in Scripts folder.
+    $CHROMA_EXE = "$PSScriptRoot\.venv\Scripts\chroma.exe"
+    & $CHROMA_EXE run --path $CHROMA_PATH --port $CHROMA_PORT --host localhost
+} else {
+    # Fallback to system chroma if venv missing (legacy support)
+    chroma run --path $CHROMA_PATH --port $CHROMA_PORT --host localhost
+}
+
