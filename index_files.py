@@ -17,7 +17,7 @@ import chromadb
 from chromadb.config import Settings
 
 # Configuration
-WORKSPACE = Path(os.environ.get("WORKSPACE", r"C:\Users\Mr. Schaslivij\.gemini\antigravity\scratch"))
+WORKSPACE = Path(os.environ.get("WORKSPACE", os.path.join(os.environ["USERPROFILE"], ".gemini", "antigravity", "scratch")))
 CHROMA_HOST = os.environ.get("CHROMA_HOST", "localhost")
 CHROMA_PORT = int(os.environ.get("CHROMA_PORT", "8000"))
 PC_NAME = socket.gethostname()
