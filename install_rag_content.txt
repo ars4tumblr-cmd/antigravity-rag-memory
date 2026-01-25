@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
     Installation script for Antigravity RAG Services.
     Can be used to set up the environment on a new machine.

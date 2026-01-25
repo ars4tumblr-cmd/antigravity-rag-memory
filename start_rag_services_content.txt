@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
     Unified startup script for Antigravity RAG Services.
     Starts ChromaDB Server (8000) and Embedding Server (8001).

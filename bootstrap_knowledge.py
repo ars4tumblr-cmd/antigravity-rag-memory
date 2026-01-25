@@ -80,7 +80,7 @@ def inject_knowledge():
     client = get_chroma_client()
     collection = client.get_or_create_collection(name="knowledge_store")
     
-    print(f"Injecting {len(KNOWLEDGE)} facts...")
+    print(f"Завантаження {len(KNOWLEDGE)} фактів...")
     
     for item in KNOWLEDGE:
         # Generate stable ID based on content to prevent duplicates
@@ -89,7 +89,7 @@ def inject_knowledge():
         # Check if exists
         existing = collection.get(ids=[doc_id])
         if existing["ids"]:
-            print(f"[-] Skipped (exists): {item['content'][:50]}...")
+            print(f"[-] Пропущено (існує): {item['content'][:50]}...")
             continue
             
         # Add timestamp
@@ -106,9 +106,9 @@ def inject_knowledge():
             metadatas=[metadata],
             ids=[doc_id]
         )
-        print(f"[+] Added: {item['content'][:50]}...")
+        print(f"[+] Додано: {item['content'][:50]}...")
 
-    print("\nDONE! Knowledge bootstrapped.")
+    print("\nГОТОВО! Знання завантажено.")
 
 if __name__ == "__main__":
     inject_knowledge()
