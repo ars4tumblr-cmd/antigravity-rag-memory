@@ -64,6 +64,12 @@ KNOWLEDGE = [
         "entity_type": "fact",
         "project_id": "windows_administration",
         "scope": "global"
+    },
+    {
+        "content": "Language Stability Rule: If Ukrainian language causes stability issues (encoding, crashes), use Latin Transliteration instead. Do not break the system for the sake of language.",
+        "entity_type": "preference",
+        "project_id": "antigravity-rag-memory",
+        "scope": "global"
     }
 ]
 
