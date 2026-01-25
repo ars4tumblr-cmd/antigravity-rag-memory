@@ -70,6 +70,18 @@ KNOWLEDGE = [
         "entity_type": "preference",
         "project_id": "antigravity-rag-memory",
         "scope": "global"
+    },
+    {
+        "content": "Project Sync Policy: 'Sync Everything'. All project folders must be Git repositories to ensure full synchronization across devices (PC1, PC2). Optimization/Filtering happens later.",
+        "entity_type": "decision",
+        "project_id": "Orchestrator_Agent",
+        "scope": "global"
+    },
+    {
+        "content": "Documentation Language: User-facing artifacts (task.md, implementation_plan.md, walkthrough.md) must be written in Ukrainian for user convenience. Technical logs/code remain in English (unless specified otherwise).",
+        "entity_type": "preference",
+        "project_id": "antigravity-rag-memory",
+        "scope": "global"
     }
 ]
 
