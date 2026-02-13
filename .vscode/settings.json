@@ -1,0 +1,23 @@
+{
+  "terminal.integrated.profiles.windows": {
+    "PowerShell (Antigravity)": {
+      "source": "PowerShell",
+      "icon": "terminal-powershell",
+      "args": [
+        "-NoExit",
+        "-Command",
+        "& 'C:\\Users\\Mr. Schaslivij\\.gemini\\scripts\\hook_vscode_tasks.ps1'"
+      ]
+    }
+  },
+  "terminal.integrated.defaultProfile.windows": "PowerShell (Antigravity)",
+  "terminal.integrated.automationProfile.windows": {
+    "path": "pwsh",
+    "args": [
+      "-NoProfile",
+      "-ExecutionPolicy",
+      "Bypass",
+      "-Command"
+    ]
+  }
+}
